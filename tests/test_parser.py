@@ -5,7 +5,7 @@ from parser import darkest_parser
 def test_game_darkest():
     for i in Path(r"D:\play_ground\DarkestDungeon").rglob("*.darkest"):
         try:
-            text = open(i).read()
+            text = open(i).read() + "\n"
         except Exception:
             continue
         print(i)
